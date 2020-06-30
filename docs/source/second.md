@@ -6,3 +6,4 @@ restructuredText. It too should be translated.
 - One
 - Two
 - Three
+- Four
