@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Peter Parente
+# This file is distributed under the same license as the Hello World,
+# Transifex and ReadTheDocs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+# 
+# Translators:
+# Peter Parente <parente@gmail.com>, 2020
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Hello World, Transifex and ReadTheDocs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-30 03:12+0000\n"
+"PO-Revision-Date: 2020-06-29 01:11+0000\n"
+"Last-Translator: Peter Parente <parente@gmail.com>, 2020\n"
+"Language-Team: Spanish (https://www.transifex.com/personal-199/teams/111120/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/second.md:1 aa4ed188ff5a43cfb5680065c626de05
+msgid "Second Child Page"
+msgstr "Segunda página"
+
+#: ../../source/second.md:3 869cd1703e59474586882cc1957ceae6
+msgid ""
+"This is another page in the example documentation. It is written in Markdown"
+" instead of restructuredText. It too should be translated."
+msgstr ""
+"Esta es otra página en la documentación de ejemplo. Está escrito en Markdown"
+" en lugar de restructuredText. También debe ser traducido."
+
+#: ../../source/second.md:6 c2337800773e40268a270a18d514eb7a
+msgid "One"
+msgstr "Uno"
+
+#: ../../source/second.md:7 adfb0ab36b0e4301b1315ae1f96993e9
+msgid "Two"
+msgstr "Dos"
+
+#: ../../source/second.md:8 d546d888773a4440a172be9f7503625f
+msgid "Three"
+msgstr "Tres"
+
+#: ../../source/second.md:9 1dc4ec66877541c083148e192dfbf37c
+msgid "Four"
+msgstr "Quatro"
