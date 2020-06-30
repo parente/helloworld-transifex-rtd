@@ -1,0 +1,34 @@
+name: Extract Translatable Strings
+
+# Run on all branch pushes
+on:
+  push:
+    paths:
+      - "docs/source/**"
+      - "!docs/source/locale/**"
+      - ".github/workflows/gettext.yml"
+
+jobs:
+  gettext:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@master
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+      - name: Install dependencies
+        working-directory: docs
+        run: pip install -r requirements.txt
+      - name: Extract source strings
+        working-directory: docs
+        run: |
+          make gettext
+          sphinx-intl update -l en
+      - name: Push to master
+        # Only commit changes to master if master just changed
+        if: github.ref == 'refs/heads/master'
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
